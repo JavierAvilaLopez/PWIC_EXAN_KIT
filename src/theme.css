@@ -1,0 +1,78 @@
+/* Estilos base y utilitarios para el proyecto de estudio. */
+:root {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #1f2937;
+  background-color: #f8f9fa;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bs-body-bg, #f8f9fa);
+}
+
+body[data-theme="dark"] {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+body[data-theme="dark"] .card {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.light {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  opacity: 0.3;
+  background-color: #cbd5f5;
+}
+
+.light.red {
+  background-color: #ef4444;
+}
+
+.light.yellow {
+  background-color: #facc15;
+}
+
+.light.green {
+  background-color: #22c55e;
+}
+
+.light.active {
+  opacity: 1;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.image-tile {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.image-tile img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-tile img:hover {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+
+.modal-backdrop-custom {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 1050;
+}
