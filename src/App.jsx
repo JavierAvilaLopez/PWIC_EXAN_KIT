@@ -8,7 +8,7 @@ const App = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
-            React Exam Kit
+            Examen Javier Avila Lopez
           </NavLink>
           <button
             className="navbar-toggler"
@@ -29,18 +29,13 @@ const App = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/about">
-                  Acerca de
-                </NavLink>
-              </li>
-              <li className="nav-item">
                 <NavLink className="nav-link" to="/contact">
-                  Contacto
+                  Publicar
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/products/1">
-                  Producto 1
+                <NavLink className="nav-link" to="/products/10">
+                  Feed
                 </NavLink>
               </li>
             </ul>

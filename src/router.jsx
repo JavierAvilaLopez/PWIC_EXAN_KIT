@@ -2,9 +2,8 @@ import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import ProductDetails from "./pages/ProductDetails";
+import FormFeed from "./pages/FormFeed.jsx";
+import Feed from "./pages/Feed.jsx";
 
 // Configuración de rutas principales para React Router.
 const router = createBrowserRouter([
@@ -17,16 +16,12 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "about",
-        element: <About />,
-      },
-      {
         path: "contact",
-        element: <Contact />,
+        element: <FormFeed />,
       },
       {
         path: "products/:id",
-        element: <ProductDetails />,
+        element: <Feed />,
       },
     ],
   },
